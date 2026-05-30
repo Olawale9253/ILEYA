@@ -4,25 +4,20 @@ public class splitArray{
     
        int [] array = {45, 60, 3, 10, 9, 22};
 
+    int odd = 0;
+
     int even = 0;
 
     for (int count = 0; count < array.length; count++){
     
-        if (even % 2 == 0){
+        if(array % 2 == 0){
 
-   
-    
-    System.out.print(" [" + array[even] + "]");
+        System.out.print(count[array]);
 }
     
+    
 }
 
-    for(int odd = 0; odd < array.length; odd++){
 
-    if(odd % 2 != 0){
-
-        System.out.print(" [ " + array[odd] + "]");
-}
-}
 }
 }
