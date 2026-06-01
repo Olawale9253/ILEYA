@@ -9,11 +9,6 @@ public class BookSuggestionSystem {
     public int bookCount = 0;
     
         Scanner userInput = new Scanner(System.in);
- 
-        bookTitles[0] = "The Hobbit";
-        bookTitles[1] = "The Mystery";
-        bookTitles[2] = "Brave kind";
-        bookCount = 3;
 
         boolean isRunning = true;
         while (isRunning) {
@@ -31,23 +26,23 @@ public class BookSuggestionSystem {
             switch (homePage){
 
                 case "1":
-                    suggestBooks();
+                    System.out.println(suggestBooks());
                     break;
 
                 case "2":
-                    addBook();
+                   System.out.println(addBook());
                     break;
 
                 case "3":
-                    removeBook();
+                    System.out.println(removeBook());
                     break;
 
                 case "4":
-                    updateBook();
+                    System.out.println(updateBook());
                     break;
 
                 case "5":
-                    showAllBooks();
+                    System.out.println(showAllBooks());
                     break;
 
                 case "6":

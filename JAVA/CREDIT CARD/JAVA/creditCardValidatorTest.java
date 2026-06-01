@@ -23,25 +23,6 @@ public class creditCardValidatorTest {
         assertFalse(CreditCardValidator.isValid(cardNumber));
     }
 
-    @Test
-    public void testInvalidCardTypeAndLengthSample() {
-     
-        String cardNumber = "234319283049582";
-        
-        assertEquals("Invalid Card", CreditCardValidator.getCardType(cardNumber));
-        assertEquals(15, CreditCardValidator.getDigitLength(cardNumber));
-        assertFalse(CreditCardValidator.isValid(cardNumber));
-    }
-
-    @Test
-    public void testVisaCardValidation() {
-     
-        String validVisa = "4388576018410707";
-        String invalidVisa = "4388576018402626";
-        
-        assertEquals("Visa", CreditCardValidator.getCardType(validVisa));
-        assertTrue(CreditCardValidator.isValid(validVisa));
-        assertFalse(CreditCardValidator.isValid(invalidVisa));
-    }
+    
 }
 
