@@ -55,8 +55,7 @@ public class creditCardValidator {
     public static int sumOfDoubleEvenPlace(String cardNumber) {
         int sum = 0;
       
-        for (int index = cardNumber.length() - 2; index >= 0; index -= 2) {
-            int digit = Character.getNumericValue(cardNumber.charAt(index));
+        for (int index = cardNumber.length - 2; index >= 0; index -= 2) {
             sum += getDigit(digit * 2);
         }
         return sum;
@@ -73,7 +72,7 @@ public class creditCardValidator {
         int sum = 0;
      
         for (int index = cardNumber.length() - 1; index >= 0; index -= 2) {
-            int digit = Character.getNumericValue(cardNumber.charAt(index));
+            
             sum += digit;
         }
         return sum;

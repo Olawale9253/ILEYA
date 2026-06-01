@@ -139,7 +139,7 @@ public class BookSuggestionSystem {
 
         System.out.println("\nAll Books");
         for (int index = 0; index < bookCount; index++) {
-            System.out.println((index + 1) + ". " + bookTitles[index]);
+            
         }
         return bookCount;
     }
