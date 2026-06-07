@@ -2,14 +2,13 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class BookSuggestionSystem {
-    
+
+     public String[] bookTitles = new String[100];
+
     public static void main(String[] args) {
 
-    public String[] bookTitles = new String[100];
-    public int bookCount = 0;
-    
+        int bookCount;
         Scanner userInput = new Scanner(System.in);
-
         boolean isRunning = true;
         while (isRunning) {
             System.out.println("\nWelcome to the Book Suggestion System!");
@@ -26,23 +25,23 @@ public class BookSuggestionSystem {
             switch (homePage){
 
                 case "1":
-                    System.out.println(suggestBooks());
+                    suggestBooks());
                     break;
 
                 case "2":
-                   System.out.println(addBook());
+                   addBook();
                     break;
 
                 case "3":
-                    System.out.println(removeBook());
+                    removeBook();
                     break;
 
                 case "4":
-                    System.out.println(updateBook());
+                    updateBook();
                     break;
 
                 case "5":
-                    System.out.println(showAllBooks());
+                    showAllBooks();
                     break;
 
                 case "6":

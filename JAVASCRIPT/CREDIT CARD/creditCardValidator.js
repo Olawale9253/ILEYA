@@ -23,13 +23,13 @@ function isValid(cardNumber) {
         return false;
     }
     
-    let sumOfEvens = sumOfDoubleEvenPlace(cardNumber);
-    let sumOfOdds = sumOfOddPlace(cardNumber);
+    let sumOfEvens = sumOfDoubleEvenCardNumber(cardNumber);
+    let sumOfOdds = sumOfOddCardNumber(cardNumber);
     
     return (sumOfEvens + sumOfOdds) % 10 == 0;
 }
 
-function sumOfDoubleEvenPlace(cardNumber) {
+function sumOfDoubleEvenCardNumber(cardNumber) {
     let sum = 0;
   
     for (let index = cardNumber.length - 2; index >= 0; index -= 2) {
@@ -47,7 +47,7 @@ function getDigit(number) {
     return (number % 10) + (number / 10);
 }
 
-function sumOfOddPlace(cardNumber) {
+function sumOfOddCardNumber(cardNumber) {
     let sum = 0;
      
     for (let index = cardNumber.length - 1; index >= 0; index -= 2) {
