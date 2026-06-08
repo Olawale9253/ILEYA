@@ -7,11 +7,12 @@ public class StudentGrade{
     System.out.println("STUDENT        SUB1      SUB2        SUB3     TOT      AVE     POS");
     System.out.println("====================================================================");
 
+
 }
    public static int getStudentList(){
   
   Scanner userInput = new Scanner(System.in);
-//    int[][] score = new int[listOfStudent][listOfSubject];
+   // int[][] score = new int[listOfStudent][listOfSubject];
 
     System.out.println("How many students do you have? ");
      int listOfStudent = userInput.nextInt();
