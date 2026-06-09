@@ -12,7 +12,7 @@ public class StudentGrade{
    public static int getStudentList(){
   
   Scanner userInput = new Scanner(System.in);
-   // int[][] score = new int[listOfStudent][listOfSubject];
+//    int[][] score = new int[listOfStudent][listOfSubject];
 
     System.out.println("How many students do you have? ");
      int listOfStudent = userInput.nextInt();

@@ -4,7 +4,7 @@ public class olawaleGradeScore{
     
     public static void main(String[] args){
 
-//        int[] score = new int[100]; 
+//        int[] score = new int[100];
 //        int[] quiz = new int[3];
 //
         Scanner userInput = new Scanner(System.in);
